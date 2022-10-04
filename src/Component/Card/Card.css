@@ -1,0 +1,72 @@
+.cardContainer {
+  margin: 15px 5px;
+  border-radius: 10px;
+  background-color: white;
+}
+.cardContainer .cardTop .imgContainer {
+  width: 350px;
+}
+.cardContainer .cardTop .imgContainer img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.cardContainer .cardBottom {
+  padding: 15px 15px;
+}
+.cardContainer .cardBottom .bottom1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cardContainer .cardBottom .bottom1 .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardContainer .cardBottom .bottom1 .left .price {
+  color: rgb(112, 101, 240);
+  font-size: 22px;
+  font-weight: 700;
+}
+.cardContainer .cardBottom .bottom1 .left .duration {
+  color: gray;
+  font-weight: 600;
+}
+.cardContainer .cardBottom .bottom1 .right {
+  border-radius: 100%;
+  border: 2px solid rgb(186, 184, 184);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(112, 101, 240);
+  padding: 5px;
+  cursor: pointer;
+}
+.cardContainer .cardBottom .bottom2 {
+  margin: 10px 0;
+}
+.cardContainer .cardBottom .bottom2 .name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.cardContainer .cardBottom .bottom2 .address {
+  color: gray;
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(223, 215, 215);
+}
+.cardContainer .cardBottom .bottom3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: gray;
+}
+.cardContainer .cardBottom .bottom3 .facilities {
+  display: flex;
+  margin: 5px 0;
+}
+.cardContainer .cardBottom .bottom3 .facilities .icon {
+  color: rgb(112, 101, 240);
+  margin-right: 5px;
+}/*# sourceMappingURL=Card.css.map */

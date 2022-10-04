@@ -1,0 +1,69 @@
+.navContainer{
+	.navWrapper{
+		background-color: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 2.5rem;
+		height: 10vh;
+		border-bottom: 1px solid black;
+		font-size: 16px;
+		font-weight: 500;
+		.left{
+			display: flex;
+			flex-direction: row;
+			.logo{
+				.logoImg{
+					height: 45px;
+					img{
+						height: 100%;
+						width: 100%;
+					}
+
+				}
+			}
+			.navItem{
+				margin: 10px 25px;
+				padding: 5px 10px;
+				border-radius: 10px;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.navItemText{
+					padding-right:  10px;
+				}
+			}
+			.logo{
+				margin-right: 35px;
+				font-size: 20px;
+				font-weight: 700;
+			}
+			.active{
+				background-color:rgb(231,231,244);
+				color: rgb(112,101,240);
+			}
+		}
+		.right{
+			display: flex;
+			flex-direction: row;
+
+			.signUp{
+				background-color:rgb(112,101,240);
+				border-radius: 10px;
+				padding: 10px 20px;
+				color: white;
+			}
+			.login{
+				border:2px solid rgb(189, 179, 179);
+				border-radius: 10px;
+				padding: 10px 20px;
+				color:rgb(112,101,240);
+			}
+			.rightItem{
+				margin:0 10px;
+			}
+		}
+	}
+}
