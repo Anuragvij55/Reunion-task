@@ -6,7 +6,7 @@ import AspectRatioIcon from '@mui/icons-material/AspectRatio';
 import "./Card.css"
 
 
-export const Card = () => {
+export const Card = ({ detail }) => {
   return (
     <div className="cardContainer">
       <div className="cardTop">
@@ -18,7 +18,7 @@ export const Card = () => {
       <div className="cardBottom">
         <div className="bottom1">
           <div className="left">
-            <div className="price">$2700</div>
+            <div className="price">${detail.price}</div>
             <div className="duration">/month</div>
           </div>
           <div className="right">
@@ -26,22 +26,20 @@ export const Card = () => {
           </div>
         </div>
         <div className="bottom2">
-          <div className="name">Pain Harbor</div>
-          <div className="address">2699 Freen ValleyHighland lake fl.</div>
+          <div className="name">{detail.name}</div>
+          <div className="address">{detail.address}</div>
         </div>
         <div className="bottom3">
-          <div className="facilities">
-            <div className="icon"><SingleBedIcon/></div>
-            <div className="value">3 Beds</div>
-          </div>
-          <div className="facilities">
-            <div className="icon"><BathtubIcon /></div>
-            <div className="value">2 bathroom</div>
-          </div>
-          <div className="facilities">
-            <div className="icon"><AspectRatioIcon/></div>
-            <div className="value">5x7 m2</div>
-          </div>
+          {
+            detail.facilities.map((fac) => {
+              return (
+                <div className="facilities">
+                  <div className="icon"><SingleBedIcon /></div>
+                  <div className="value">{fac.name}</div>
+                </div>
+              )
+            })
+          }
         </div>
 
       </div>

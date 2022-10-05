@@ -3,6 +3,7 @@ import { Card } from '../Card/Card'
 import { Filter } from '../Filter/Filter'
 import { Navbar } from '../NavBar/Navbar'
 import "./MainPage.css"
+import {data} from "../../data"
 
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 export const MainPage = () => {
@@ -53,12 +54,9 @@ export const MainPage = () => {
 				</div>
 
 				<div className="bottom">
-					<Card/>
-					<Card/>
-					<Card/>
-					<Card/>
-					<Card/>
-					<Card/>
+					{
+						data.map(item=> <Card detail={item}/>)
+					}
 				</div>
 			</div>
 		</div>
