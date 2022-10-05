@@ -13,6 +13,8 @@
 .navContainer .navWrapper .left {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .navContainer .navWrapper .left .logo .logoImg {
   height: 45px;
@@ -22,13 +24,14 @@
   width: 100%;
 }
 .navContainer .navWrapper .left .navItem {
-  margin: 10px 25px;
-  padding: 5px 10px;
+  margin: 10px 20px;
+  padding: 5px 15px;
   border-radius: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 30px;
 }
 .navContainer .navWrapper .left .navItem .navItemText {
   padding-right: 10px;

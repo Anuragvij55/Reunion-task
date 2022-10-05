@@ -13,6 +13,8 @@
 		.left{
 			display: flex;
 			flex-direction: row;
+			align-items: center;
+			justify-content: center;
 			.logo{
 				.logoImg{
 					height: 45px;
@@ -24,13 +26,14 @@
 				}
 			}
 			.navItem{
-				margin: 10px 25px;
-				padding: 5px 10px;
+				margin: 10px 20px;
+				padding: 5px 15px;
 				border-radius: 10px;
 				cursor: pointer;
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				height: 30px;
 				.navItemText{
 					padding-right:  10px;
 				}
