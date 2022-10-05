@@ -59,12 +59,18 @@
 			}
 			.value{
 				font-weight: 700;
-				
+				border: none;
+				outline: none;
 			}
 			.itemvalue{
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
+				width: 100%;
+				.date{
+					display: flex;
+					
+				}
 				.icon{
 					display: flex;
 					align-items: center;
@@ -88,12 +94,46 @@
 			}
 		}
 	}
-
-
+	
+	
 	.bottom{
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		
+	}
+}
+
+.dropdown{
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	.dropbtn{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		font-size: 17px;
+		.contentItem{
+			margin: 10px 5px;
+			cursor: pointer;
+		}
+	  }	  
+}
+
+.react-datepicker-wrapper{
+	input{
+		border: none;
+		font-size: 17px;
+		font-weight: 700;
+		outline: none;
 	}
 }

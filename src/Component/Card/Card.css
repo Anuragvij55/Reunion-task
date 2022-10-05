@@ -4,6 +4,9 @@
   background-color: white;
   max-width: 350px;
 }
+.cardContainer .cardTop {
+  position: relative;
+}
 .cardContainer .cardTop .imgContainer {
   width: 350px;
 }
@@ -11,8 +14,27 @@
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
+.cardContainer .cardTop .popular {
+  background-color: rgb(112, 101, 240);
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 7px;
+  font-size: 15px;
+  border-radius: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -10px;
+}
+.cardContainer .cardTop .popular .icon {
+  margin-right: 10px;
+}
 .cardContainer .cardBottom {
-  padding: 15px 15px;
+  padding: 10px 15px;
 }
 .cardContainer .cardBottom .bottom1 {
   display: flex;

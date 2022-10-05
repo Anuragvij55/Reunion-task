@@ -56,11 +56,17 @@
 }
 .mainContainer .middle .item .value {
   font-weight: 700;
+  border: none;
+  outline: none;
 }
 .mainContainer .middle .item .itemvalue {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+}
+.mainContainer .middle .item .itemvalue .date {
+  display: flex;
 }
 .mainContainer .middle .item .itemvalue .icon {
   display: flex;
@@ -85,5 +91,37 @@
 .mainContainer .bottom {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.dropdown {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.dropdown .dropbtn {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
+}
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 17px;
+}
+.dropdown .dropdown-content .contentItem {
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.react-datepicker-wrapper input {
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  outline: none;
 }/*# sourceMappingURL=MainPage.css.map */

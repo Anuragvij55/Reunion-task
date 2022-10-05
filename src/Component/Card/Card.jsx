@@ -4,7 +4,7 @@ import SingleBedIcon from '@mui/icons-material/SingleBed';
 import BathtubIcon from '@mui/icons-material/Bathtub';
 import AspectRatioIcon from '@mui/icons-material/AspectRatio';
 import "./Card.css"
-
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 
 export const Card = ({ detail }) => {
   return (
@@ -13,6 +13,7 @@ export const Card = ({ detail }) => {
         <div className="imgContainer">
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpe6whx0r3s65SfyBn9l-2HrN93b8aijxTh5xVFbZg&s" alt="0" />
         </div>
+        {detail.popular && <div className="popular"><AutoAwesomeIcon  className='icon'/> Popular</div>}
       </div>
 
       <div className="cardBottom">
@@ -28,12 +29,13 @@ export const Card = ({ detail }) => {
         <div className="bottom2">
           <div className="name">{detail.name}</div>
           <div className="address">{detail.address}</div>
+
         </div>
         <div className="bottom3">
           {
             detail.facilities.map((fac) => {
               return (
-                <div className="facilities">
+                <div className="facilities" key={fac?.key}>
                   <div className="icon"><SingleBedIcon /></div>
                   <div className="value">{fac.name}</div>
                 </div>
