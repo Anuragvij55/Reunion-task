@@ -11,7 +11,7 @@ export const Card = ({ detail }) => {
     <div className="cardContainer">
       <div className="cardTop">
         <div className="imgContainer">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpe6whx0r3s65SfyBn9l-2HrN93b8aijxTh5xVFbZg&s" alt="0" />
+          <img src={detail?.image} alt="0" />
         </div>
         {detail.popular && <div className="popular"><AutoAwesomeIcon  className='icon'/> Popular</div>}
       </div>
@@ -19,7 +19,7 @@ export const Card = ({ detail }) => {
       <div className="cardBottom">
         <div className="bottom1">
           <div className="left">
-            <div className="price">${detail.price}</div>
+            <div className="price">${detail?.price}</div>
             <div className="duration">/month</div>
           </div>
           <div className="right">
@@ -27,8 +27,8 @@ export const Card = ({ detail }) => {
           </div>
         </div>
         <div className="bottom2">
-          <div className="name">{detail.name}</div>
-          <div className="address">{detail.address}</div>
+          <div className="name">{detail?.name}</div>
+          <div className="address">{detail?.address}</div>
 
         </div>
         <div className="bottom3">
